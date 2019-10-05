@@ -3,7 +3,7 @@ function threeNumberSum(array, target) {
     const triplets = [];
 
     for (let i = 0; i < array.length - 2; i++) {
-        let leftIdx = i + 1
+        let leftIdx = i + 1;
         let rightIdx = array.length - 1
         while (leftIdx < rightIdx) {
             const currentSum = array[i] + array[leftIdx] + array[rightIdx];
@@ -18,6 +18,5 @@ function threeNumberSum(array, target) {
             }
         }
     }
-
     return triplets;
 }
